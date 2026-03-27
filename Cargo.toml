@@ -76,3 +76,4 @@ socket2 = { git = "https://github.com/renhiyama/socket2" }
 signal-hook = { git = "https://github.com/renhiyama/signal-hook" }
 getrandom_03 = { package = "getrandom", path = "patches/getrandom-v03" }
 getrandom_04 = { package = "getrandom", path = "patches/getrandom-v04" }
+libloading = { git = "https://github.com/renhiyama/rust_libloading", branch = "runixos" }
