@@ -29,7 +29,7 @@ mod imp {
     use std::os::unix::fs::{MetadataExt, PermissionsExt};
 
     pub fn access(p: &Path, mode: AccessMode) -> io::Result<()> {
-        #[cfg(target_os = "linux")]
+        #[cfg(any(target_os = "linux", target_os = "runixos"))]
         {
             // If helix has ambient CAP_DAC_OVERRIDE, everything is accessible regardless of mode bits
             use rustix::thread::{capability_is_in_ambient_set, CapabilitySet};
