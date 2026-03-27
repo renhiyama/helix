@@ -79,3 +79,4 @@ getrandom_04 = { package = "getrandom", path = "patches/getrandom-v04" }
 libloading = { git = "https://github.com/renhiyama/rust_libloading", branch = "runixos-0.8" }
 tokio = { git = "https://github.com/renhiyama/tokio", branch = "runixos" }
 open = { git = "https://github.com/renhiyama/open-rs", branch = "runixos" }
+errno = { git = "https://github.com/renhiyama/rust-errno", branch = "runixos" }
